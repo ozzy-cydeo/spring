@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+
+        <title>Mentor Registration</title>
+
+    </head>
+
+
+    <body>
+    
+    <div align="center">
+    
+  	<table>
+  	
+  	<thead>
+  		<tr>
+  			<td>firstName</td>
+  			<td>lastName</td>
+  			<td>age</td>
+  		</tr>
+  	
+  	</thead>
+  	
+  	<tbody>
+  		<tr th:each="mentor : ${mentorList}">
+  			<td th:text="${mentor.firstName}"></td>
+  			<td th:text="${mentor.lastName}"></td>
+  			<td th:text="${mentor.age}"></td>
+  		</tr>
+  	
+  	
+  	</tbody>
+  	
+  	
+  	
+  	
+  	
+  	</table>
+    	
+    	
+    	
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    </body>
+    
+    
+    
+</html>
